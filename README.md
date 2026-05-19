@@ -9,8 +9,8 @@ Runs in Google Colab, no API keys or external data needed.
 ## Why I Built This
 
 Wanted to go beyond EPS beats as a signal. Earnings calls are dense with
-forward-looking language that the market doesn't fully price in immediately —
-especially the Q&A segment, where management has less control over the narrative.
+forward-looking language that the market doesn't fully price in immediately.
+Especially the Q&A segment, where management has less control over the narrative.
 Built this to see if tone shifts are actually predictable and tradeable.
 
 ---
