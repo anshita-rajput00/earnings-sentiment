@@ -33,10 +33,10 @@ Both run in parallel. Scores are length-weighted by segment word count.
 
 ### 3. Signal Construction
 
-- Composite Tone — length-weighted ensemble across both models and both segments
-- Tone Delta — quarter-over-quarter change, same firm
-- Q&A / Prepared Divergence — how much the analyst session deviates from the script
-- Uncertainty Composite — hedge-word density weighted across segments
+- Composite Tone: length-weighted ensemble across both models and both segments
+- Tone Delta: quarter-over-quarter change, same firm
+- Q&A / Prepared Divergence : how much the analyst session deviates from the script
+- Uncertainty Composite : hedge-word density weighted across segments
 
 ### 4. Event Study
 CAR windows: [0,+1], [0,+5], [0,+30]. Welch t-test on high vs. low tone-delta cohorts.
