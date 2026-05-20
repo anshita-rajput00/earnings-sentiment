@@ -19,7 +19,7 @@ Built this to see if tone shifts are actually predictable and tradeable.
 
 ### 1. Corpus Construction
 500 company-quarter observations, 100 firms across 20 quarters (2018–2023), 10 GICS sectors.
-Each transcript split into Prepared Remarks and Q&A Session — treated as separate
+Each transcript split into Prepared Remarks and Q&A Session, treated as separate
 signals, not pooled.
 
 ### 2. Sentiment Scoring
@@ -62,9 +62,10 @@ Quintile sort on tone_delta. Long Q5, short Q1. Rebalanced quarterly. 5bps per l
 | Max Drawdown | -4.60% |
 | Cumulative Alpha vs. SPX | +7.38x |
 
-Note: these numbers come from statistically realistic simulated data — not live market returns.
+Note: these numbers come from statistically realistic simulated data, not live market returns.
 The simulation does not account for earnings announcement clustering, sector momentum, or
 liquidity constraints. Real-world performance would differ.
+
 
 ---
 
@@ -99,7 +100,7 @@ pandas, numpy, statsmodels, scipy, matplotlib, seaborn
 
 ## Known Limitations
 
-- Simulated data — sentiment scores are statistically calibrated but not real FinBERT inference
+- Simulated data: sentiment scores are statistically calibrated but not real FinBERT inference
 - No survivorship bias correction in firm sample
 - Backtest does not model borrow costs on the short leg
 - Single-factor sort; real implementations would use a composite rank
